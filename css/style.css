@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+:root{
+    --white:#fff;
+    --green:#41B3A3;
+    --blue:#659dbd;
+    --green-dark:#5cdb95;
+    --white-dark:#eceef5;
+    --smooth: all .3s ease-in;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Dancing Script",sans-serif;
+    background: var(--white-dark);
+}
+
+/* layout */
+#header{
+    width: 85%;
+    height: 80px;
+    background-color: var(--white);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main{
+    width: 85%;
+    height: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#footer{
+    width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: var(--white);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* end layout */
+
+.list-menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.list-menu>li>a{
+    color: var(--green);
+    font-size: 14px;
+    padding: 0 50px;
+    display: block;
+}
+
+/* LOGO */
+#logo-snow{
+    box-sizing: content-box;
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+}
+
+#logo-snow>a{
+    font-size: 20px;
+    color: black;
+    padding: 5px 5px;
+}
+/* end logo */
+
+.list-menu :hover a{
+    color: var(--green-dark);
+    transition: var(--smooth);
+}
+
+/* tab snow  */
+
+.heart{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heart img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    animation-name: heart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heart
+{
+    50%
+    {
+        transform: translate(20%,50%) scale(1,2);
+    }
+
+    100%
+    {
+        transform: translate(20%,50%) scale(1,1);
+    }
+}
+
+.content{
+    margin-top: 140px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.btn button{
+    background: none;
+    outline: none;
+    width: 50px;
+    font-size: 16px;
+    color: var(--blue);
+    border-radius: 5px;
+}
+
+button:hover {
+    color: var(--white);
+    transition: var(--smooth);
+    background: var(--blue);
+}
+.no:hover{
+    display: none;
+}
+
+.show{
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* album */
+.list-picture{
+    float: left;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+.list-picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* about you */
+
+
+/* contact */
+
+.contact{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.contact a{
+    font-size: 25px;
+    color: #551a8b;
+}
+
+a:hover{
+    color: var(--blue);
+    transition: var(--smooth);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
